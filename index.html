@@ -1,63 +1,71 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <title>Sandwich</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
 <body>
   <h1>Sandwich Maker</h1>
   <form>
-  <fieldset>
-  <legend>Create Your Samich</legend>
     <fieldset>
-      <legend>Bread</legend>
-        <input type="checkbox" name="White">White
-        <input type="checkbox" name="Wheat">Wheat
-        <input type="checkbox" name="Honey Oat">Honey Oat
-        <input type="checkbox" name="Rye">Rye
-    </fieldset>
-    <fieldset>
-      <legend>Meat</legend>
-        <input type="checkbox" name="Ham ">Ham
-        <input type="checkbox">Turkey
-        <input type="checkbox">Roast Beef
-        <input type="checkbox">Salami
-        <input type="checkbox">Spam
-    </fieldset>
-    <fieldset>
-      <legend>Cheese</legend>
-        <input type="checkbox">American
-        <input type="checkbox">Cheddar
-        <input type="checkbox">Provolone
-        <input type="checkbox">Swiss
-        <input type="checkbox">Velveta
-    </fieldset>
-    <fieldset>
-      <legend>Veggies</legend>
-        <input type="checkbox">Onions
-        <input type="checkbox">Green Peppers
-        <input type="checkbox">Banana Peppers
-        <input type="checkbox">Lettuce
-        <input type="checkbox">Tomatos
-    </fieldset>
-    <fieldset>
-      <legend>Condiments</legend>
-        <input type="checkbox">Mayo
-        <input type="checkbox">Yellow Mustard
-        <input type="checkbox">Dijon Mustard
-        <input type="checkbox">Oil and Vinegar
-        <input type="checkbox">Melted Chocolate
-    </fieldset>
-    <button>Submit</button>
+      <legend>Create Your Samich</legend>
+      <fieldset>
+        <legend>Bread</legend>
+        <input type="checkbox" class="bread" name="white">White
+        <input type="checkbox" class="bread" name="wheat">Wheat
+        <input type="checkbox" class="bread" name="multiGrain">Multi-grain
+        <input type="checkbox" class="bread" name="rye">Rye
+        <input type="checkbox" class="bread" name="bagel">Bagel
+      </fieldset>
+      <fieldset>
+        <legend>Meat</legend>
+        <input type="checkbox" class="meat" name="ham">Ham
+        <input type="checkbox" class="meat" name="turkey">Turkey
+        <input type="checkbox" class="meat" name="roastBeef">Roast Beef
+        <input type="checkbox" class="meat" name="salami">Salami
+        <input type="checkbox" class="meat" name="roastChicken">Roast Chicken
+      </fieldset>
+      <fieldset>
+        <legend>Cheese</legend>
+        <input type="checkbox" class="cheese" name="american">American
+        <input type="checkbox" class="cheese" name="cheddar">Cheddar
+        <input type="checkbox" class="cheese" name="muenster">Muenster
+        <input type="checkbox" class="cheese" name="swiss">Swiss
+        <input type="checkbox" class="cheese" name="colbyJack">Colby Jack
+      </fieldset>
+      <fieldset>
+        <legend>Veggies</legend>
+        <input type="checkbox" class="veggies" name="onions">Onions
+        <input type="checkbox" class="veggies" name="spinach">Spinach
+        <input type="checkbox" class="veggies" name="bananaPeppers">Banana Peppers
+        <input type="checkbox" class="veggies" name="lettuce">Lettuce
+        <input type="checkbox" class="veggies" name="tomatos">Tomatos
+      </fieldset>
+      <fieldset>
+        <legend>Condiments</legend>
+        <input type="checkbox" class="condiments" name="mayo">Mayo
+        <input type="checkbox" class="condiments" name="yellowMustard">Yellow Mustard
+        <input type="checkbox" class="condiments" name="dijonMustard">Dijon Mustard
+        <input type="checkbox" class="condiments" name="oilAndVinegar">Oil and Vinegar
+        <input type="checkbox" class="condiments" name="pesto">Pesto
+      </fieldset><br>
     </fieldset>
   </form>
+
   <hr>
-  <h3>Your Order:</h3>
-  <div id="output">*****OUTPUT WILL GO HERE****</div>
 
+    <div id="output">
+    </div>
 
+    <button id="myBtn">Click for total</button>
 
-<script type="text/javascript" src="javascripts/DOMHandler.js"></script>
-<script type="text/javascript" src="javascripts/Meat.js"></script>
-<script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
+  <script type="text/javascript" src="javascripts/DOMHandler.js"></script>
+  <script type="text/javascript" src="javascripts/SandwichMaker.js"></script>
+  <script type="text/javascript" src="javascripts/Bread.js"></script>
+  <script type="text/javascript" src="javascripts/Cheese.js"></script>
+  <script type="text/javascript" src="javascripts/Condiments.js"></script>
+  <script type="text/javascript" src="javascripts/Veggies.js"></script>
+  <script type="text/javascript" src="javascripts/Meat.js"></script>
+
 </body>
 </html>
